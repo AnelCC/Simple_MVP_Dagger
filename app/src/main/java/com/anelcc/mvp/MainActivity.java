@@ -33,9 +33,9 @@ public class MainActivity extends AppCompatActivity implements LoginActivityMVP.
 
         ((App) getApplication()).getComponent().inject(this);
 
-        firstName = (EditText) findViewById(R.id.loginActivity_firstName_editText);
-        lastName = (EditText) findViewById(R.id.loginActivity_lastName_editText);
-        login = (Button) findViewById(R.id.loginActivity_login_button);
+        firstName = findViewById(R.id.loginActivity_firstName_editText);
+        lastName = findViewById(R.id.loginActivity_lastName_editText);
+        login = findViewById(R.id.loginActivity_login_button);
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
