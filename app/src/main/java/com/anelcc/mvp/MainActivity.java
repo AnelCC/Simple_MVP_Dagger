@@ -80,4 +80,9 @@ public class MainActivity extends AppCompatActivity implements LoginActivityMVP.
     public void showUserSavedMessage() {
         Toast.makeText(this, "User saved successfully", Toast.LENGTH_SHORT).show();
     }
+
+    @Override
+    public void showUserNotAvailable() {
+        Toast.makeText(this, "The User is not available", Toast.LENGTH_SHORT).show();
+    }
 }
