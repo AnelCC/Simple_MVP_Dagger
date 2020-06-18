@@ -24,7 +24,7 @@ public class LoginActivityPresenter implements LoginActivityMVP.Presenter {
 
     @Override
     public void setView(LoginActivityMVP.View view) {
-
+        this.view = view;
     }
 
     @Override

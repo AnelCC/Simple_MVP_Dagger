@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity implements LoginActivityMVP.
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                presenter.loginButtonClicked();
             }
         });
     }
@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity implements LoginActivityMVP.
     protected void onResume() {
         super.onResume();
         presenter.setView(this);
+        presenter.getCurrentUser();
     }
 
     @Override
