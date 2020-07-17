@@ -1,4 +1,6 @@
-package com.anelcc.mvp;
+package com.anelcc.mvp.app;
+
+import com.anelcc.mvp.MainActivity;
 
 import javax.inject.Singleton;
 

@@ -1,4 +1,4 @@
-package com.anelcc.mvp;
+package com.anelcc.mvp.app;
 /*
 You are seeing we will overriding onCreate methods here,
 where will be the component will be instantiated by dagger.
@@ -13,6 +13,8 @@ Just create a class that extends application components and add below code.
 
 import android.app.Application;
 
+import com.anelcc.mvp.login.LoginModule;
+
 import dagger.Module;
 
 //This is where dagger keep will keep track of the dependencies.
@@ -22,9 +24,10 @@ public class App extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        //needs to run once to generate it and modify in the manifest
+        //we should add each module here
         component = DaggerAppComponent.builder()
                 .appModule(new AppModule(this))
+                .loginModule(new LoginModule())
                 .build();
     }
     public AppComponent getComponent() {

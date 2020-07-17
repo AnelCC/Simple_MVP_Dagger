@@ -1,4 +1,4 @@
-package com.anelcc.mvp;
+package com.anelcc.mvp.app;
 
 import android.app.Application;
 import android.content.Context;
